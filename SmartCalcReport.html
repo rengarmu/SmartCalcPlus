@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="generator" content="Aspose.Words for .NET 24.5.0" />
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        h2,
+        h3,
+        h4,
+        p {
+            margin: 0pt
+        }
+
+        h2 {
+            margin-top: 13pt;
+            margin-bottom: 13pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 173%;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+            color: #000000
+        }
+
+        h3 {
+            margin-top: 13pt;
+            margin-bottom: 13pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 173%;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+            color: #000000
+        }
+
+        h4 {
+            margin-top: 14pt;
+            margin-bottom: 14.5pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 157%;
+            font-family: Calibri;
+            font-size: 14pt;
+            font-weight: bold;
+            font-style: normal;
+            color: #000000
+        }
+
+        span.Heading3Char {
+            font-size: 16pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-size: 14pt;
+            font-weight: bold
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3 style="text-align:center"><span>CPP_SmartCalc_v2.0</span></h3>
+        <h4><span>Information </span></h4>
+        <p><span>An extended version of the standard calculator in C++ using the object-oriented programming
+                paradigm.</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p style="font-size:14pt"><span class="Heading4Char">MVC pattern </span><span
+                style="font-size:10pt; -aw-import:spaces">&#xa0;</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span>The Model-View-Controller (MVC) pattern is a scheme for separating application modules into three macro
+                components: a model that contains the business logic, a view that is a UI form for interacting with the
+                program, and a controller that modifies the model by user action.</span></p>
+        <p style="font-size:12pt"><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p style="font-size:12pt"><span style="font-weight:bold">Part 1. </span><span>Class "SmartModel"</span><span
+                style="-aw-import:spaces">&#xa0; </span></p>
+        <p><span>The model stores and accesses the main data, performs operations on requests defined by the business
+                logic of the program, i.e. it is responsible for the part of the program that handles all the algorithms
+                and information processing. These models, modified by the controller, affect the display of information
+                on the user interface. The model in this programme should be the class library that performs the
+                calculations. This library must provide all the necessary classes and methods to perform them. And this
+                is the business logic of the program, because it provides the means to solve the problem.</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span style="font-weight:bold">Methods:</span><span style="font-weight:bold; -aw-import:spaces">&#xa0;
+            </span></p>
+        <p><span style="-aw-import:spaces">&#xa0;</span><span>- MakeList - converting a string to a Leksems list,
+                sequence validation, and conversion to Polish notation.</span></p>
+        <p><span style="-aw-import:spaces">&#xa0;</span><span>- findResult - calculating the result of the entered
+                expression.</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p style="font-size:12pt"><span style="font-weight:bold">Part 2. </span><span>Class
+                "SmartController"</span><span style="-aw-import:spaces">&#xa0; </span></p>
+        <p><span>A controller is a thin macro component that performs model modifications. It is used to generate
+                requests to the model. In code, it looks like a kind of "facade" for the model, that is, a set of
+                methods that already work directly with the model. It is called thin because the ideal controller
+                contains no additional logic other than calling one or more methods of the model. The controller acts as
+                a link between the interface and the model. This allows the model to be completely encapsulated from the
+                representation. This separation is helpful in that it allows the view code to know nothing about the
+                model code and to address only the controller, whose interface of the provided functions is unlikely to
+                change much. The model, on the other hand, can change significantly, and if you "move" to other
+                algorithms, technologies, or even programming languages in the model, only a small piece of code in the
+                controller directly related to the model needs to be changed. Otherwise, it would probably be necessary
+                to rewrite a significant part of the interface code, as it would depend very much on the implementation
+                of the model. So when the user interacts with the interface, they call controller methods that modify
+                the model.</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span style="font-weight:bold">Methods:</span><span style="font-weight:bold; -aw-import:spaces">&#xa0;&#xa0;
+            </span></p>
+        <p><span style="-aw-import:spaces">&#xa0;</span><span>- SmartCalcModel - creates a Model class from a string
+                entered on the UI.</span><span style="-aw-import:spaces">&#xa0; </span></p>
+        <p><span style="-aw-import:spaces">&#xa0;</span><span>- GraficValue - calculates intermediate results for
+                plotting.</span><span style="-aw-import:spaces">&#xa0; </span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p style="font-size:12pt"><span style="font-weight:bold">Part 3. </span><span>Class "MainWindow"</span><span
+                style="-aw-import:spaces">&#xa0; </span></p>
+        <p><span>The view contains all the code associated with the programme interface. An ideal interface code should
+                not contain any business logic. It just provides the form for interacting with the user.</span></p>
+        <p><span style="-aw-import:ignore">&#xa0;</span></p>
+        <p><span style="font-weight:bold">Methods:</span><span style="font-weight:bold; -aw-import:spaces">&#xa0;&#xa0;
+            </span></p>
+        <p><span style="-aw-import:spaces">&#xa0;</span><span>- MainWindow - the main element for user interaction with
+                the program (UI).</span></p>
+    </div>
+</body>
+
+</html>
